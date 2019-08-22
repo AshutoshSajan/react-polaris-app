@@ -2,7 +2,7 @@ import React from 'react';
 import { Navigation } from '@shopify/polaris';
 import { ArrowLeftMinor, LinkMinor } from '@shopify/polaris-icons';
 
-const ToggleMenu = () => {
+export default function ToggleMenu() {
 	return (
 		<Navigation location="/">
 			<Navigation.Section
@@ -18,13 +18,10 @@ const ToggleMenu = () => {
 				items={[
 					{
 						label: 'Recomended Apps',
-						icon: LinkMinor,
-						onClick: () => {} //this.toggleState('isLoading')
+						icon: LinkMinor
 					}
 				]}
 			/>
 		</Navigation>
 	);
-};
-
-export default ToggleMenu;
+}

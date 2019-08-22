@@ -7,8 +7,11 @@ root: {
 }
 
 .main-content-container {
-  margin: 0 auto;
+  /*margin: 0 auto;*/
   width: 80%;
+  /*display: flex;*/
+  /*flex-direction: column;*/
+  /*align-items: center;*/
 }
 
 .card-container {
@@ -30,6 +33,10 @@ root: {
 }
 
 .card-section {
+  /*display: flex;*/
+  /*justify-content: center;*/
+  /*flex-direction: column;*/
+  /*align-items: center;*/
   padding: 2rem;
   margin: 0 2rem;
 }

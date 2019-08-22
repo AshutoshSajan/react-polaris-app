@@ -7,7 +7,6 @@ export const headerTheme = {
 	text: {
 		h1: 'whatsChat'
 	},
-
 	logo: {
 		width: 40,
 		avatar: 'whatsapp.svg',

@@ -7,16 +7,33 @@ import MainContent from './components/MainContent';
 import ToggleMenu from './components/ToggleMenu';
 import { headerTheme } from './static/themes';
 
-const App = () => {
-  return (
-    <div>
-      <AppProvider theme={headerTheme}>
-        <Frame topBar={<NavBar />} navigation={<ToggleMenu />}>
-          <MainContent />
-        </Frame>
-      </AppProvider>
-    </div>
-  );
-};
+class App extends React.Component {
+  state = {
+    showMobileNavigation: false
+  };
+
+  toggleState = () => {
+    this.setState({
+      showMobileNavigation: !this.state.showMobileNavigation
+    });
+  };
+
+  render() {
+    return (
+      <div>
+        <AppProvider theme={headerTheme}>
+          <Frame
+            topBar={<NavBar openNavigationMenu={this.toggleState} />}
+            navigation={<ToggleMenu />}
+            showMobileNavigation={this.state.showMobileNavigation}
+            onNavigationDismiss={() => this.toggleState()}
+          >
+            <MainContent />
+          </Frame>
+        </AppProvider>
+      </div>
+    );
+  }
+}
 
 export default App;
