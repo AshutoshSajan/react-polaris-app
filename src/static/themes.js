@@ -6,8 +6,8 @@ export const headerTheme = {
 	},
 	logo: {
 		width: 160,
-		avatar: 'whatsapp.svg',
 		topBarSource: 'whatsChat.png',
+		url: 'https://altcampus.io',
 		accessibilityLabel: 'WhatsChat'
 	}
 };
