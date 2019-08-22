@@ -4,13 +4,10 @@ export const headerTheme = {
 			background: '#202e78'
 		}
 	},
-	text: {
-		h1: 'whatsChat'
-	},
 	logo: {
-		width: 40,
+		width: 160,
 		avatar: 'whatsapp.svg',
-		topBarSource: 'whatsapp.svg',
+		topBarSource: 'whatsChat.png',
 		accessibilityLabel: 'WhatsChat'
 	}
 };
