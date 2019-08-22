@@ -1,0 +1,43 @@
+root: {
+  font-size: 18px;
+}
+
+.app-rating {
+  padding-left: 0.6rem;
+}
+
+.main-content-container {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.card-container {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product-card {
+  margin: 2rem;
+  display: flex;
+  padding: 2rem;
+  background: #fff;
+  align-items: flex-start;
+}
+
+.card {
+  padding: 0 2rem;
+}
+
+.card-section {
+  padding: 2rem;
+  margin: 0 2rem;
+}
+
+.main-container-heading {
+  margin: 2rem 0 1rem 6rem;
+}
+
+.card-section-heading {
+  margin-left: 2rem;
+}

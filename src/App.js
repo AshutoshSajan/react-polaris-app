@@ -1,59 +1,22 @@
 import React from 'react';
+import { AppProvider, Frame } from '@shopify/polaris';
+
 import './App.css';
 import NavBar from './components/NavBar';
-import Header from './components/Header';
+import MainContent from './components/MainContent';
+import ToggleMenu from './components/ToggleMenu';
+import { headerTheme } from './static/themes';
 
-import CallCard from './components/CallCard';
-
-import {
-  AppProvider,
-  Heading,
-  Page,
-  CalloutCard,
-  TopBar,
-  Card,
-  FormLayout,
-  Stack,
-  Layout,
-  TextField,
-  Frame
-} from '@shopify/polaris';
-// import { ArrowLeftMinor } from '@shopify/polaris-icons';
-
-class App extends React.Component {
-  render() {
-    return (
-      <>
-        {<Header />}
-        {
-          //<NavBar />
-        }
-        <Layout>
-          <div>
-            <AppProvider>
-              <Layout.Section
-                title="Store details"
-                description="Shopify and your customers will use this information to contact you."
-              >
-                <Stack>
-                  {
-                    // <Heading>MARKETING</Heading>
-                    // <CallCard />
-                    // <CallCard />
-                    // <Heading>MARKETING</Heading>
-                    // <CallCard />
-                    // <CallCard />
-                    // <CallCard />
-                    // <CallCard />
-                  }
-                </Stack>
-              </Layout.Section>
-            </AppProvider>
-          </div>
-        </Layout>
-      </>
-    );
-  }
-}
+const App = () => {
+  return (
+    <div>
+      <AppProvider theme={headerTheme}>
+        <Frame topBar={<NavBar />} navigation={<ToggleMenu />}>
+          <MainContent />
+        </Frame>
+      </AppProvider>
+    </div>
+  );
+};
 
 export default App;

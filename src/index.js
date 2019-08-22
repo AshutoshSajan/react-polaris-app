@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import './reset.css';
-
 import App from './App';
 import '@shopify/polaris/styles.css';
 import * as serviceWorker from './serviceWorker';
