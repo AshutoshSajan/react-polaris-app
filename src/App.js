@@ -1,7 +1,6 @@
 import React from 'react';
 import { AppProvider, Frame } from '@shopify/polaris';
 
-import './App.css';
 import NavBar from './components/NavBar';
 import MainContent from './components/MainContent';
 import ToggleMenu from './components/ToggleMenu';
