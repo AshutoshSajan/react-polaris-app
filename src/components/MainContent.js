@@ -15,7 +15,6 @@ export default function MainContent() {
 				<div className="card-container">
 					<ProductCard />
 					<ProductCard />
-					<ProductCard />
 				</div>
 			</div>
 			<div className="card-section">
@@ -23,6 +22,7 @@ export default function MainContent() {
 					<DisplayText size="small">MARKETING</DisplayText>
 				</div>
 				<div className="card-container">
+					<ProductCard />
 					<ProductCard />
 					<ProductCard />
 				</div>
